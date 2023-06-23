@@ -1,0 +1,14 @@
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.app {
+    display:flex;
+    height: 500px;
+    width: auto;
+    background-color:aqua
+}
+
+.app-answer {
+    width: 100%
+}
