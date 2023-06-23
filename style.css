@@ -13,7 +13,9 @@ body {
 
 .app-answer {
     width: 99%;
-    height: 200px;
+    height: 150px;
+    text-align: end;
+    font-size: 120px;
 }
 
 .app-button {
