@@ -12,16 +12,17 @@ body {
 }
 
 .app-answer {
-    width: 99%;
-    height: 150px;
+    border-radius: 20px;
+    margin: 10px 20px 0px 20px;
+    width: 90%;
+    height: 100px;
     text-align: end;
-    font-size: 120px;
+    font-size: 60px;
 }
 
 .app-button {
     margin: 10px;
     border-radius: 20px;
-    border-color: rgba(rgb(79, 74, 233), green, blue, alpha);
     width: 100px;
     height: 100px;
     background-color: rgba(200, 200, 200, 0.6)
@@ -32,19 +33,13 @@ body {
 }
 
 .app-button-equal {
-    margin: 10px;
+    margin: 25px 10px 10px 10px;
     border-radius: 20px;
-    border-color: rgba(rgb(79, 74, 233), green, blue, alpha);
-    width: 100%;
+    width: 94%;
     height: 100px;
     background-color: rgba(200, 200, 200, 0.6)
 }
 
 .app-button-equal:hover {
-    margin: 10px;
-    border-radius: 20px;
-    border-color: rgba(rgb(79, 74, 233), green, blue, alpha);
-    width: 100px;
-    height: 100px;
     background-color: rgba(255, 255, 255, 0.9)
 }
