@@ -20,10 +20,9 @@ const addNumbers = (number) => {
 }
 
 const deleteLastNumber = () => {
-    answer = answer.substring(0, answer.length - 1)
-    if (answer === NaN) {
-        answer = 0
-    }
+    x = 0
+    y = 0
+    answer = 0
     document.getElementById('answer').value = parseInt(answer)
     Debug()
 }
@@ -32,7 +31,15 @@ const Plus = () => {
     console.log("Plus")
     if (x === 0) {
         x = document.getElementById('answer').value
-        document.getElementById('answer').value = 0
+        answer = 0
+        document.getElementById('answer').value = parseInt(answer)
+    }
+    else if (x != 0) {
+        y = parseInt(document.getElementById('answer').value)
+        answer = parseInt(x) + parseInt(y)
+        document.getElementById('answer').value = parseInt(answer)
+        x = 0
+        y = 0
     }
     else {
         y = document.getElementById('answer').value
@@ -41,6 +48,16 @@ const Plus = () => {
 }
 
 const Equal = () => {
+    if (x != 0 && answer != 0)
+    {
+        answer = parseInt(x) + parseInt(answer)
+        document.getElementById('answer').value = parseInt(answer)
+        x = 0
+        y = 0
+    }
+    else {
+
+    }
     console.log("Equal")
     Debug()
 }
