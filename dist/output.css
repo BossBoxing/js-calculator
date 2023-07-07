@@ -571,6 +571,10 @@ video {
   inset-inline-end: auto;
 }
 
+.col-auto {
+  grid-column: auto;
+}
+
 .m-\[50px\] {
   margin: 50px;
 }
@@ -681,6 +685,10 @@ video {
   width: 400px;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
@@ -773,6 +781,15 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-center {
