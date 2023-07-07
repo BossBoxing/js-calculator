@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="stylesheet" href="style.css"/> -- Chang To Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
     <title>Calculator</title>
 </head>
 <body>
-    <div class="app">
-        <input id="answer" class="app-answer" value="0" type="answer">
+    <div class="flex">
+        <input id="answer" class="" value="0" type="answer">
         <button onClick='{addNumbers(1)}' class="app-button">1</button>
         <button onClick='{addNumbers(2)}' class="app-button">2</button>
         <button onClick='{addNumbers(3)}' class="app-button">3</button>

@@ -1,14 +1,21 @@
-body {
-    background-color: rgba(0, 0, 0, 0.9);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .app {
+        /* margin-top: 100px; */
+        /* margin-left: 100px; */
+        /* margin-right: 100px; */
+        height: auto;
+        /* width: 500px; */
+        background-color:white
+    }
 }
 
-.app {
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    height: auto;
-    width: 500px;
-    background-color:white
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .app-answer {
