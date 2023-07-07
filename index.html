@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,35 @@
     <link href="/dist/output.css" rel="stylesheet">
     <title>Calculator</title>
 </head>
+
 <body>
-    <div class="flex">
-        <input id="answer" class="" value="0" type="answer">
-        <button onClick='{addNumbers(1)}' class="app-button">1</button>
-        <button onClick='{addNumbers(2)}' class="app-button">2</button>
-        <button onClick='{addNumbers(3)}' class="app-button">3</button>
-        <button onClick='{addNumbers(4)}' class="app-button">4</button>
-        <button onClick='{addNumbers(5)}' class="app-button">5</button>
-        <button onClick='{addNumbers(6)}' class="app-button">6</button>
-        <button onClick='{addNumbers(7)}' class="app-button">7</button>
-        <button onClick='{addNumbers(8)}' class="app-button">8</button>
-        <button onClick='{addNumbers(9)}' class="app-button">9</button>
-        <button onClick='{addNumbers(0)}' class="app-button">0</button>
-        <button onClick='{deleteLastNumber()}' class="app-button">CLR</button>
-        <button onClick='{Plus()}' class="app-button">+</button>
-        <button onClick='{Equal()}' class="app-button-equal">=</button>
+    <div id="content" class="container mx-auto">
+        <h1 class="w-full text-center pt-5 text-gray-200 font-boldpt-5 text-[50px]">js-calculator</h1>
+        <div class="card w-[400px] justify-items-center rounded-[30px] mt-10">
+            <div class="">
+                <input id="answer" disabled class="w-full border rounded-[50px] text-[100px] text-right" value="0" type="answer">
+            </div>
+            <div class="grid grid-cols-3 gap-5 pt-5">
+                <button onClick='{addNumbers(1)}' class="text-[50px] border border-black rounded-full">1</button>
+                <button onClick='{addNumbers(2)}' class="text-[50px] border border-black rounded-full">2</button>
+                <button onClick='{addNumbers(3)}' class="text-[50px] border border-black rounded-full">3</button>
+                <button onClick='{addNumbers(4)}' class="text-[50px] border border-black rounded-full">4</button>
+                <button onClick='{addNumbers(5)}' class="text-[50px] border border-black rounded-full">5</button>
+                <button onClick='{addNumbers(6)}' class="text-[50px] border border-black rounded-full">6</button>
+                <button onClick='{addNumbers(7)}' class="text-[50px] border border-black rounded-full">7</button>
+                <button onClick='{addNumbers(8)}' class="text-[50px] border border-black rounded-full">8</button>
+                <button onClick='{addNumbers(9)}' class="text-[50px] border border-black rounded-full">9</button>
+            </div>
+            <div class="grid grid-cols-4  gap-5 pt-5">
+                <button onClick='{addNumbers(0)}' class="text-[50px] border border-black rounded-full">0</button>
+                <button onClick='{deleteLastNumber()}' class="text-[50px] border border-black rounded-full">CLR</button>
+                <button onClick='{Plus()}' class="text-[50px] border border-black rounded-full">+</button>
+                <button onClick='{Equal()}' class="text-[50px] border border-black rounded-full">=</button>
+            </div>
+        </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>

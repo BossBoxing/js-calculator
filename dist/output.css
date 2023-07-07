@@ -522,13 +522,94 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.app {
-  /* margin-top: 100px; */
-  /* margin-left: 100px; */
-  /* margin-right: 100px; */
-  height: auto;
-  /* width: 500px; */
-  background-color:white
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.relative {
+  position: relative;
+}
+
+.end-auto {
+  inset-inline-end: auto;
+}
+
+.m-\[50px\] {
+  margin: 50px;
+}
+
+.m-\[100px\] {
+  margin: 100px;
+}
+
+.m-\[150px\] {
+  margin: 150px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ml-\[150px\] {
+  margin-left: 150px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -539,48 +620,78 @@ video {
   display: grid;
 }
 
-.w-10 {
-  width: 2.5rem;
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.min-h-\[auto\] {
+  min-height: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .w-5 {
   width: 1.25rem;
 }
 
-.w-\[100px\] {
-  width: 100px;
+.w-10 {
+  width: 2.5rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-60 {
+  width: 15rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .w-\[200px\] {
   width: 200px;
 }
 
-.flex-1 {
-  flex: 1 1 0%;
+.w-\[400px\] {
+  width: 400px;
 }
 
-.flex-auto {
-  flex: 1 1 auto;
+.max-w-max {
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
-.flex-\[20px\] {
-  flex: 20px;
+.origin-center {
+  transform-origin: center;
 }
 
-.flex-\[50px\] {
-  flex: 50px;
-}
-
-.flex-\[px\] {
-  flex: px;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.snap-center {
+  scroll-snap-align: center;
 }
 
 .grid-cols-3 {
@@ -589,6 +700,160 @@ video {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.place-content-center {
+  place-content: center;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-\[50px\] {
+  border-radius: 50px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
+.pl-\[150px\] {
+  padding-left: 150px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-\[100px\] {
+  font-size: 100px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[4440px\] {
+  font-size: 4440px;
+}
+
+.text-\[200px\] {
+  font-size: 200px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 body {
@@ -626,4 +891,10 @@ body {
 
 .app-button-equal:hover {
   background-color: rgba(255, 255, 255, 0.9)
+}
+
+@media (min-width: 640px) {
+  .sm\:border {
+    border-width: 1px;
+  }
 }
